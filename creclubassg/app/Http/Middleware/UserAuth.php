@@ -18,7 +18,7 @@ class UserAuth
     {
         if(!$request->session()->has('CRECLUB_USER_ID'))
         {
-            return redirect('/login');
+            return redirect('/');
         }
         return $next($request);
     }
